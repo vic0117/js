@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div class="box">
+        <input type="text" id="test">
+        <h3 id="text">0</h3>
+        <input type="button" value="點我試試"id="bt">
+
+        
+    </div>
+    <script>
+    //獲取元素
+    var oTest=document.getElementById('test'),
+        oText=document.getElementById('text'),
+        oBt=document.getElementById('bt'),
+        index=0;
+
+    //點擊操作
+    oBt.onclick=function(){
+        index=index+1;
+        oTest.value=index;
+        oText.innerHTML=index;
+    }
+    
+    
+
+    </script>
+    
+</body>
+</html>

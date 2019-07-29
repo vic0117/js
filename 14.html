@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="text" placeholder="請輸入成績">
+    <input type="button" value="成績" id="bt">
+
+    <script>
+    let oText= document.getElementById('text'),
+        oBt=document.getElementById('bt');
+
+    oBt.onclick=function(){
+        let num=Number(oText);
+        if(oText.value>=90){
+            alert('A 優秀');
+        }else if(oText.value>=80){
+            alert('B 良好');
+        }else if(oText.value>=70){
+            alert('Ｃ 普通');
+        }else if(oText.value>=60){
+            alert('Ｄ 中下');
+        }else{
+            alert('不及格');
+        }        
+    }
+    </script>
+</body>
+</html>

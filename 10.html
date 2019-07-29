@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    ul{
+        width: 200px;
+        border:1px solid black;
+    }
+    a{
+        text-decoration: none;
+        color:black;
+    }
+    </style>
+</head>
+<!-- <ul>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">北京</a></li>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">上海</a></li>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">廣州</a></li>
+    <li><a href="http://" target="_blank" rel="noopener noreferrer">深圳</a></li>
+</ul> -->
+<body>
+    <script>
+    var a="北京";
+    var b="上海";
+    var c="廣州";
+    var d="深圳";
+    var list="";
+    list=list+"<ul>";
+       list=list+'<li><a href="http://" target="_blank" rel="noopener noreferrer">'+a+'</a></li>';
+       list=list+'<li><a href="http://" target="_blank" rel="noopener noreferrer">'+b+'</a></li>';
+       list=list+'<li><a href="http://" target="_blank" rel="noopener noreferrer">'+c+'</a></li>';
+       list=list+'<li><a href="http://" target="_blank" rel="noopener noreferrer">'+d+'</a></li>';
+    list=list+"</ul>"
+    document.write(list);
+    </script>
+</body>
+</html>

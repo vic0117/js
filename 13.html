@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <input type="text" id="text1">
+    <input type="text" id="text2">
+    <input type="button" value="加法" id="bt1">
+    <input type="button" value="減法" id="bt2">
+    <input type="button" value="乘法" id="bt3">
+    <input type="button" value="除法" id="bt4">
+    <input type="button" value="取餘" id="bt5">
+
+    <script>
+        let oText1=document.getElementById('text1'),
+            oText2=document.getElementById('text2'),
+            oBt1=document.getElementById('bt1'),
+            oBt2=document.getElementById('bt2'),
+            oBt3=document.getElementById('bt3'),
+            oBt4=document.getElementById('bt4'),
+            oBt5=document.getElementById('bt5');
+
+        oBt1.onclick=function(){
+            let num1=Number(oText1.value);
+            let num2=Number(oText2.value);
+            alert(num1+num2);
+        }
+        oBt2.onclick=function(){
+            let num1=Number(oText1.value);
+            let num2=Number(oText2.value);
+            alert(num1-num2);
+        }
+        oBt3.onclick=function(){
+            let num1=Number(oText1.value);
+            let num2=Number(oText2.value);
+            alert(num1*num2);
+        }
+        oBt4.onclick=function(){
+            let num1=Number(oText1.value);
+            let num2=Number(oText2.value);
+            alert(num1/num2);
+        }
+        oBt5.onclick=function(){
+            let num1=Number(oText1.value);
+            let num2=Number(oText2.value);
+            alert(num1%num2);
+        }
+    </script>
+</body>
+</html>
