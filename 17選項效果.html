@@ -41,10 +41,37 @@
         oBt2=document.getElementById('bt2'),
         oBt3=document.getElementById('bt3');
         
-        oBt1.onclick=function(){}
-        oBt2.onclick=function(){}
-        oBt3.onclick=function(){}
+        //臨時變量,用於保存被選中的是哪一個
+        let tempBt=oBt1;
 
+        //選中與未選中其實就是有沒有active
+        //選中：即給對應的li一個className為active
+        //取消選中：刪除li中的className
+        oBt1.onclick=function(){
+        //清除選中
+        tempBt.className="";
+        //記錄選中的是誰
+        tempBt=oBt1;
+        //改變對應樣式
+        tempBt.className="active"
+    }
+        oBt2.onclick=function(){
+        //清除選中
+        tempBt.className="";
+        //記錄選中的是誰
+        tempBt=oBt2;
+        //改變對應樣式
+        tempBt.className="active"
+
+    }
+        oBt3.onclick=function(){
+        //清除選中
+        tempBt.className="";
+        //記錄選中的是誰
+        tempBt=oBt3;
+        //改變對應樣式
+        tempBt.className="active"
+    }
     </script>
 </body>
 </html>

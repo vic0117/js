@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="button" value="顯示" id="bt1">
+    <input type="button" value="隱藏" id="bt2">
+    <img src="images/phones.png" alt="" id="img"> -->
+
+    <input type="button" value="顯示/隱藏" id="bt1">
+    <img src="images/phones.png" alt="" id="img">
+    
+    <script>
+        //設置兩個按鈕一個隱藏一個顯示
+    // let oBt1=document.getElementById('bt1'),
+    //     oBt2=document.getElementById('bt2'),
+    //     oImg=document.getElementById('img');
+
+    //     oBt1.onclick=function(){
+    //         oImg.style.display='block';
+    //     }
+        // oBt2.onclick=function(){
+        //     oImg.style.display='none';
+        // }
+
+
+        //顯示/隱藏設置在同一按鈕上
+        
+    let oBt1=document.getElementById('bt1'),
+        oImg=document.getElementById('img'),    
+        isShow=true;
+        oBt1.onclick=function(){
+            //切換狀態 真變假 假變真
+            // if(isShow){
+            //     isShow=false;
+            // }else{
+            //     isShow=true;
+            // }
+           
+            //根據頁面調整顯示/隱藏
+            // if(isShow){
+            //     oImg.style.display="block";
+            // }else{
+            //     oImg.style.display="none";
+            // }
+
+            ///////////////////////////////
+             //可簡寫為
+             //切換狀態 真變假 假變真
+             isShow=!isShow;
+             //根據頁面調整顯示/隱藏
+             oImg.style.display=isShow?"block":"none"
+             ///////////////////條件////真執行///假執行
+
+        }
+
+
+    </script>
+    
+</body>
+</html>

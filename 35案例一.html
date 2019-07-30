@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="按鈕">
+    <script>
+    //案例一 生成100個按鈕（優化處理）(固定次數可使用for循環)
+    let str="";
+    for(let i=1;i<=100;i++){
+        // document.write('<input type="button" value="按鈕'+i+'">') 此方法速度慢
+        str=str+'<input type="button" value="按鈕'+i+'">'
+    }
+    document.write(str);
+
+
+    
+    </script>
+</body>
+</html>
