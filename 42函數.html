@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <input type="button" value="" id="bt">
+    <script>
+        //定義函數 hello
+    function hello(){
+
+    } 
+        //函數調用
+    hello();   
+
+        //匿名函數
+        //定義變量speak,變量中裝的是一個函數
+        let speak= function(){
+            document.write('哈哈...');
+            document.write('<br>');
+        }
+        //匿名函數調用
+        speak();
+
+        // let oBt=document.getElementById('bt');
+        // oBt.onclick=function(){
+        //     alert(1);
+        // }
+
+        //將整個函數賦值
+        // oBt.onclick=speak;
+
+        //speak()是函數調用 並不是賦值給oBt.onclick
+    
+        //  備註：如果在同一個script標籤內 可以先調用 後定義
+                    //在不同個script內的話 要先定義 才能調用
+    </script>
+</body>
+</html>

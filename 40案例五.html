@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    //計算1+3+5+7+9+.....的和
+    //方法一
+    let num=0;
+    // for(let i=1;i<100;i++){
+        
+    //     if(i%2==1){
+    //         num=num+i;
+    //     }
+    // }
+    // alert(num);
+
+    //方式二
+    // for(let i=1;i<100;i+=2){
+    //     num=num+i
+    // }
+    // alert(num);
+
+    //方式三
+    // let i =1;
+    // while(i<100){
+    //     num+=i;
+    //     i+=2;
+    // }
+    // alert(num);
+
+    //方式四
+    let i=1;
+    while(1){
+        num+=i;
+        i+=2;
+        if(i>100){
+            break;
+        }
+    }
+    alert(num);
+    </script>
+</body>
+</html>
